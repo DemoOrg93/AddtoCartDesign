@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_new_arrival"
+            android:title="NEW ARRIVAL"
+
+            />
+        <item
+            android:id="@+id/nav_womens"
+            android:title="WOMENS" />
+        <item
+            android:id="@+id/nav_mens"
+
+            android:title="MENS" />
+        <item
+            android:id="@+id/nav_kids"
+            android:title="KIDS" />
+        <item
+            android:id="@+id/nav_jewelry"
+            android:title="JEWELRY" />
+        <item
+            android:id="@+id/nav_books"
+            android:title="BOOKS" />
+        <item
+            android:id="@+id/nav_sports"
+            android:title="SPORTS" />
+        <item
+            android:id="@+id/nav_art_and_craft"
+            android:title="ART &amp; CRAFT" />
+    </group>
+
+
+
+</menu>
