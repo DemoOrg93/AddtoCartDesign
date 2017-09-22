@@ -59,18 +59,7 @@ public class LoginActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                if(click){
-//
-//                    btnRegister.setBackgroundColor(Color.RED);
-//                    click=false;
-//                }
-//                else
-//                {
-//                    btnRegister.setBackgroundColor(Color.BLACK);
-//
-//                }
 
-//                btnRegister.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_color));
                 startActivity(new Intent(LoginActivity.this,MainActivity.class));
             }
         });
