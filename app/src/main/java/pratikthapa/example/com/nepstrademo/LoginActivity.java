@@ -1,6 +1,7 @@
 package pratikthapa.example.com.nepstrademo;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,11 +10,12 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.roughike.bottombar.BottomBar;
+import com.roughike.bottombar.BottomBarTab;
 import com.roughike.bottombar.OnTabSelectListener;
 
 public class LoginActivity extends AppCompatActivity {
 
-
+    public boolean click=true;
     Button btnRegister;
     BottomBar bottomBar;
     @Override
@@ -21,27 +23,32 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
+
+        final BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
+        BottomBarTab dummy = bottomBar.getTabWithId(R.id.tab_home1);
+        dummy.setVisibility(View.GONE);
+
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
-                if (tabId == R.id.tab_home) {
-                    // The tab with id R.id.tab_home was selected,
-                    // change your content accordingly.
+                switch (tabId) {
+                    case R.id.tab_home1:
+                        break;
 
-                }
-                else if(tabId==R.id.tab_products){
+                    case R.id.tab_home:
 
-                }
-                else if(tabId==R.id.tab_order){
+                        break;
+                    case R.id.tab_products:
 
+                        break;
+                    case R.id.tab_order:
 
-                }
-                else if(tabId==R.id.tab_account){
-
-                }
-                else{
-
+                        break;
+                    case R.id.tab_account:
+                        Toast.makeText(LoginActivity.this, "Account", Toast.LENGTH_SHORT).show();
+                        break;
+                    default:
+                        break;
 
                 }
             }
@@ -52,6 +59,18 @@ public class LoginActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                if(click){
+//
+//                    btnRegister.setBackgroundColor(Color.RED);
+//                    click=false;
+//                }
+//                else
+//                {
+//                    btnRegister.setBackgroundColor(Color.BLACK);
+//
+//                }
+
+//                btnRegister.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_color));
                 startActivity(new Intent(LoginActivity.this,MainActivity.class));
             }
         });

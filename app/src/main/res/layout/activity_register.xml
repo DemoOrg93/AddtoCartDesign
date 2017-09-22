@@ -229,10 +229,10 @@
 
             <CheckBox
                 android:id="@+id/checkBox"
-                android:layout_width="94dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Newletter"
+                android:text="Newsletter"
                 app:layout_constraintLeft_toLeftOf="@+id/lbl_password"
                 app:layout_constraintTop_toBottomOf="@+id/lbl_password"></CheckBox>
 
@@ -241,7 +241,7 @@
                 android:layout_width="132dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
-                android:background="@color/colorAppRed"
+                android:background="@drawable/red_buttons_design"
                 android:text="Register"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"

@@ -23,6 +23,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.roughike.bottombar.BottomBar;
+import com.roughike.bottombar.BottomBarTab;
 import com.roughike.bottombar.OnTabSelectListener;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -54,23 +55,31 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        bottomBar = (BottomBar) findViewById(R.id.bottomBar);
+        final BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
+        BottomBarTab dummy = bottomBar.getTabWithId(R.id.tab_home1);
+        dummy.setVisibility(View.GONE);
+
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
-                if (tabId == R.id.tab_home) {
-                    // The tab with id R.id.tab_home was selected,
-                    // change your content accordingly.
+                switch (tabId) {
+                    case R.id.tab_home1:
+                        break;
 
-                } else if (tabId == R.id.tab_products) {
+                    case R.id.tab_home:
 
-                } else if (tabId == R.id.tab_order) {
+                        break;
+                    case R.id.tab_products:
 
+                        break;
+                    case R.id.tab_order:
 
-                } else if (tabId == R.id.tab_account) {
-                    Toast.makeText(MainActivity.this, "Account", Toast.LENGTH_SHORT).show();
-                } else {
-
+                        break;
+                    case R.id.tab_account:
+                        Toast.makeText(MainActivity.this, "Account", Toast.LENGTH_SHORT).show();
+                        break;
+                    default:
+                        break;
 
                 }
             }

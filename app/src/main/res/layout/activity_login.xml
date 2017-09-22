@@ -104,7 +104,7 @@
                 android:layout_width="110dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
-                android:background="@color/colorAppBlack"
+                android:background="@drawable/black_buttons_design"
                 android:text="Login"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
@@ -135,7 +135,7 @@
                 android:layout_width="110dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
-                android:background="@color/colorAppBlack"
+                android:background="@drawable/black_buttons_design"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:text="Register here"
@@ -172,6 +172,7 @@
             app:bb_tabXmlResource="@xml/bottombar_tabs"
             app:bb_inActiveTabColor="@color/colorWhite"
             app:bb_activeTabColor="@color/colorPrimary"
+
             />
 
 

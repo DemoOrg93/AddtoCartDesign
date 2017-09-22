@@ -1,4 +1,10 @@
 <tabs>
+
+
+
+    <tab
+        id="@+id/tab_home1"
+        />
     <tab
         id="@+id/tab_home"
         icon="@drawable/home_icon"
