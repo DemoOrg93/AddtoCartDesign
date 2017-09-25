@@ -33,15 +33,23 @@ public class LoginActivity extends AppCompatActivity {
             public void onTabSelected(@IdRes int tabId) {
                 switch (tabId) {
                     case R.id.tab_home1:
-                        break;
+                     break;
 
                     case R.id.tab_home:
+                       Intent ilogin = new Intent(LoginActivity.this, MainActivity.class);
+                      startActivity(ilogin);
 
-                        break;
+
                     case R.id.tab_products:
+                   //    Intent iiproducts = new Intent(LoginActivity.this,CategoriesActivity.class);
+                     //  startActivity(iiproducts);
+
+
 
                         break;
                     case R.id.tab_order:
+                     Intent iiinorder = new Intent(LoginActivity.this, OrderActivity.class);
+                      startActivity(iiinorder);
 
                         break;
                     case R.id.tab_account:
@@ -60,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
             }
         });
     }
