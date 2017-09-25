@@ -241,7 +241,7 @@
                 android:layout_width="132dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/red_buttons_design"
+                android:background="@color/colorAppRed"
                 android:text="Register"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"

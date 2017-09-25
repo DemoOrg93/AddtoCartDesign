@@ -7,7 +7,7 @@
     tools:context="pratikthapa.example.com.nepstrademo.MainActivity">
 
 
-    <include layout="@layout/activity_register" />
+    <include layout="@layout/content_food" />
 
 
 
