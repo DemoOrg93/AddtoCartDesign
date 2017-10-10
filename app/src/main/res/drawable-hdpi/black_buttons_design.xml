@@ -7,6 +7,7 @@
             <gradient android:angle="-90" android:startColor="@color/colorAppBlack" android:endColor="@color/colorAppBlack"  />
         </shape>
     </item>
+
     <item android:state_focused="true">
         <shape android:shape="rectangle"  >
             <corners android:radius="3dip" />
